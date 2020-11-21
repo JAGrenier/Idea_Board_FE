@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function IdeaCard() {
+export default function IdeaCard({idea}) {
     return (
         <div>
-            <p>I am an Idea Card 💡</p>
+            <h1>{idea.content}</h1>
+            <h2>{idea.category}</h2>
+            <p>{idea.date}</p>
         </div>
     )
 }
