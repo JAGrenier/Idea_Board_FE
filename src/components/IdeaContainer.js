@@ -8,9 +8,8 @@ export default function cardContainer({ideas}) {
 
     return (
         <div>
-            <h1>container for ideas</h1>
-            {showIdeas()}
             <IdeaForm />
+            <div className="idea-container" >{showIdeas()}</div>
         </div>
     )
 }

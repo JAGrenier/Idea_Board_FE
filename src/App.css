@@ -1,0 +1,29 @@
+:root{
+    --blue: #6DD3CE;
+    --lime: #C8E9A0;
+    --orange: #F7A278;
+    --pink: #CD7A9A;
+    --darkPurple: #5b3447;
+}
+.App {
+    text-align: center;
+}
+body{
+    background-image: url('https://www.myfreetextures.com/wp-content/uploads/2014/10/cork.jpg');
+    background-position: center;
+    background-size: cover;
+}
+h1, h2, p{
+    color: var(--darkPurple)
+}
+.idea-card{
+    background-color: var(--blue);
+    width:15%;
+}
+.idea-container{
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+

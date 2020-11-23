@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-import CardContainer from './components/CardContainer';
+import CardContainer from './components/IdeaContainer';
 
 export default class App extends Component {
   
@@ -24,7 +24,7 @@ export default class App extends Component {
 
   return (
     <div className="App">
-    <h1>Put your Ideas in here!</h1>
+    <h1>My Idea Board</h1>
       <CardContainer ideas={this.state.ideas} />
     </div>
   );
