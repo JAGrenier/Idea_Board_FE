@@ -1,7 +1,9 @@
 import { Component } from 'react'
 
+const BackURL = "http://localhost:3000/ideas"
+
 export default class IdeaForm extends Component {
-    
+
     state = {
         newIdea: {
             title: "",
@@ -13,6 +15,20 @@ export default class IdeaForm extends Component {
 
     addNewIdea = (event) => {
         event.preventDefault()
+        fetch(BackURL, {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+                "accept": "application/json"
+            },
+            body:JSON.stringify({
+                title: this.state.newIdea.title,
+                category: this.state.newIdea.category,
+                content: this.state.newIdea.content,
+                date: this.state.newIdea.date
+            })
+        })
+        this.props.getIdeas()
         
     }
 

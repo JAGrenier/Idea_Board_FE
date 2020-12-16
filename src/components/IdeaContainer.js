@@ -2,13 +2,13 @@ import React from 'react'
 import IdeaCard from './IdeaCard'
 import IdeaForm from './IdeaForm'
 
-export default function cardContainer({ideas}) {
+export default function IdeaContainer({ideas, getIdeas}) {
 
     const showIdeas = () => ideas.map(idea => <IdeaCard idea={idea} key={idea.id} /> )
 
     return (
         <div>
-            <IdeaForm />
+            <IdeaForm getIdeas={getIdeas}/>
             <div className="idea-container" >{showIdeas()}</div>
         </div>
     )
