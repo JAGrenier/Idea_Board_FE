@@ -2,9 +2,9 @@ import React from 'react'
 import IdeaCard from './IdeaCard'
 import IdeaForm from './IdeaForm'
 
-export default function IdeaContainer({ideas, getIdeas}) {
+export default function IdeaContainer({ideas, getIdeas, deleteIdea}) {
 
-    const showIdeas = () => ideas.map(idea => <IdeaCard idea={idea} key={idea.id} /> )
+    const showIdeas = () => ideas.map(idea => <IdeaCard idea={idea} key={idea.id} deleteIdea={deleteIdea} /> )
 
     return (
         <div>
