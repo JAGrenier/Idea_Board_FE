@@ -48,7 +48,13 @@ export default class IdeaForm extends Component {
                 <h2>Have a new idea? Add it here!</h2>
                 <form className="new-idea-form" onSubmit={this.addNewIdea}>
                     <label htmlFor="title">Title:</label>
-                    <input value={this.state.title} name="title" id="title" type="text" onChange={this.updateIdea}></input>
+                    <input 
+                        value={this.state.title} 
+                        name="title"
+                        id="title"
+                        type="text" 
+                        onChange={this.updateIdea}
+                    ></input>
                     <label htmlFor="category">Category:</label>
                     <input name="category" id="category" onChange={this.updateIdea}></input>
                     {/* needs to be a select */}
