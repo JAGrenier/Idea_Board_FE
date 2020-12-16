@@ -27,3 +27,12 @@ h1, h2, p{
     justify-content: space-around;
 }
 
+.new-idea-form{
+    display: flex;
+    padding: 1rem;
+    font-weight: bold;
+    justify-content: center;
+    color: var(--darkPurple);
+
+}
+
