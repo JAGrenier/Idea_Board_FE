@@ -1,5 +1,5 @@
 :root{
-    --blue: #6DD3CE;
+    --blue: #c0dddc;
     --lime: #C8E9A0;
     --orange: #F7A278;
     --pink: #CD7A9A;
@@ -33,6 +33,10 @@ h1, h2, p{
     font-weight: bold;
     justify-content: center;
     color: var(--darkPurple);
+}
 
+.delete-button{
+    border-style: none;
+    background-color: transparent;
 }
 

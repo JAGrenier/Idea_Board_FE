@@ -20,12 +20,18 @@ export default class App extends Component {
       }))
   }
 
+  deleteIdea = (id) => {
+    let filtered = this.state.ideas.filter(idea => idea.id !== id)
+    this.setState({ideas: filtered})
+    fetch(`http://localhost:3000/ideas/${id}`, {method: "DELETE"})
+  }
+
   render() {
 
   return (
     <div className="App">
     <h1>My Idea Board</h1>
-      <IdeaContainer ideas={this.state.ideas} getIdeas={this.getIdeas} />
+      <IdeaContainer ideas={this.state.ideas} getIdeas={this.getIdeas} deleteIdea={this.deleteIdea} />
     </div>
   );
 }

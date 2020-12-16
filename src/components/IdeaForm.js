@@ -56,12 +56,28 @@ export default class IdeaForm extends Component {
                         onChange={this.updateIdea}
                     ></input>
                     <label htmlFor="category">Category:</label>
-                    <input name="category" id="category" onChange={this.updateIdea}></input>
-                    {/* needs to be a select */}
+                    <select name="category" id="category" onChange={this.updateIdea}>
+                        <option value="Home">Home</option>
+                        <option value="App">App</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Food">Food</option>
+                        <option value="Getting Outside">Getting Outside</option>
+                        <option value="Other">Other</option>
+                    </select>
                     <label htmlFor="content">Content:</label>
-                    <input name="content" id="content" type="text" onChange={this.updateIdea}></input>
-                    <label htmlFor="date">Date:</label>
-                    <input name="date" id="date" type="date" onChange={this.updateIdea}></input>
+                    <input 
+                        name="content" 
+                        id="content" 
+                        type="text" 
+                        onChange={this.updateIdea}
+                    ></input>
+                    <label htmlFor="date">Today's Date:</label>
+                    <input 
+                        name="date" 
+                        id="date" 
+                        type="date" 
+                        onChange={this.updateIdea}
+                    ></input>
                     <input type="submit"></input>
                 </form>
                 
