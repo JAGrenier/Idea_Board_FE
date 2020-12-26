@@ -3,6 +3,8 @@
     --lime: #C8E9A0;
     --orange: #F7A278;
     --pink: #CD7A9A;
+    --purple: #9E8FB2;
+    --yellow: #FFF585;
     --darkPurple: #5b3447;
 }
 .App {
@@ -38,11 +40,11 @@ h1, h2, p{
     width:15%;
 }
 .idea-card-getting-outside{
-    background-color: var(--blue);
+    background-color: var(--yellow);
     width:15%;
 }
 .idea-card-other{
-    background-color: var(--blue);
+    background-color: var(--purple);
     width:15%;
 }
 .idea-container{
