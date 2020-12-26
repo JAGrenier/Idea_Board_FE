@@ -57,12 +57,13 @@ export default class IdeaForm extends Component {
                     ></input>
                     <label htmlFor="category">Category:</label>
                     <select name="category" id="category" onChange={this.updateIdea}>
-                        <option value="Home">Home</option>
-                        <option value="App">App</option>
-                        <option value="Travel">Travel</option>
-                        <option value="Food">Food</option>
-                        <option value="Getting Outside">Getting Outside</option>
-                        <option value="Other">Other</option>
+                        <option selected disabled>Select Category</option>
+                        <option value={this.state.category}>Home</option>
+                        <option value={this.state.category}>App</option>
+                        <option value={this.state.category}>Travel</option>
+                        <option value={this.state.category}>Food</option>
+                        <option value={this.state.category}>Getting Outside</option>
+                        <option value={this.state.category}>Other</option>
                     </select>
                     <label htmlFor="content">Content:</label>
                     <input 
