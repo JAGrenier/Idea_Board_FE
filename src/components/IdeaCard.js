@@ -24,11 +24,8 @@ export default function IdeaCard({idea, deleteIdea}) {
                 return  "idea-card-getting-outside";           
             default:
                 return"idea-card-other";
-        }
-                    
+        }               
     }
-
-//idea.category="home"? "idea-card-home": "idea-card-other"
     return (
         <div className={categoryColors()}>
             <h1>{idea.title}</h1>
