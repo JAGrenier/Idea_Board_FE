@@ -20,6 +20,31 @@ h1, h2, p{
     background-color: var(--blue);
     width:15%;
 }
+
+.idea-card-home{
+    background-color: var(--blue);
+    width:15%;
+}
+.idea-card-app{
+    background-color: var(--lime);
+    width:15%;
+}
+.idea-card-travel{
+    background-color: var(--orange);
+    width:15%;
+}
+.idea-card-food{
+    background-color: var(--pink);
+    width:15%;
+}
+.idea-card-getting-outside{
+    background-color: var(--blue);
+    width:15%;
+}
+.idea-card-other{
+    background-color: var(--blue);
+    width:15%;
+}
 .idea-container{
     padding: 2rem;
     display: flex;

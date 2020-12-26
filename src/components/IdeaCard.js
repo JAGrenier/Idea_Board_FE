@@ -2,9 +2,40 @@ import React from 'react'
 import Delete from '../images/delete.svg'
 
 export default function IdeaCard({idea, deleteIdea}) {
+    
+    
     const handleDelete = () =>{
         deleteIdea(idea.id)
     }
+
+    
+
+    // switch (category) {
+    //     case home:
+            
+    //         break;
+
+    //     case app:
+
+    //         break;
+
+    //     case travel:
+
+    //         break;
+
+    //     case food:
+
+    //         break;
+
+    //     case gettingOutside:
+    //         break;
+
+    //     case other:
+    //         break;
+    
+    //     default:
+    //         break;
+    // }
     return (
         <div className="idea-card">
             <h1>{idea.title}</h1>
