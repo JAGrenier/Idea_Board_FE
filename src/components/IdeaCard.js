@@ -11,40 +11,26 @@ export default function IdeaCard({idea, deleteIdea}) {
     
     const categoryColors = () =>{
      
-        if (idea.category === "Home"){
-
+        switch (idea.category) {
+            case "Home":
+                return "idea-card-home";
+            case "App":
+                return  "idea-card-app";
+            case "Travel":
+                return  "idea-card-travel";
+            case "Food":
+                return  "idea-card-food";
+            case "gettingOutside":
+                return  "idea-card-getting-outside";           
+            default:
+                return"idea-card-other";
         }
+                    
     }
-        // var className;
-        // switch (idea.category) {
-        //     case "Home":
-        //        return className="idea-card-home";
-    
-        //     case "app":
-        //         return  "idea-card-app"
-                
-    
-        //     case "travel":
-        //         return  "idea-card-travel"
-                
-    
-        //     case "food":
-        //         return  "idea-card-food"
-                
-    
-        //     case "gettingOutside":
-        //         return  "idea-card-getting-outside"
-                
-    
-        //     default:
-        //         return className="idea-card-other"
-        //         break;
-        // }
-
 
 //idea.category="home"? "idea-card-home": "idea-card-other"
     return (
-        <div className="idea-card-other">
+        <div className={categoryColors()}>
             <h1>{idea.title}</h1>
             <h2>category: {idea.category}</h2>
             <p>{idea.content}</p>
